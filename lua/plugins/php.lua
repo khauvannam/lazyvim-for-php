@@ -1,7 +1,6 @@
 return {
   {
     "stevearc/conform.nvim",
-    optional = true,
     opts = {
       formatters_by_ft = {
         php = { "pint", "php_cs_fixer" },
@@ -10,13 +9,16 @@ return {
     },
   },
   {
-    -- Remove phpcs linter.
     "mfussenegger/nvim-lint",
-    optional = true,
     opts = {
       linters_by_ft = {
-        php = {},
+        php = { "" },
       },
+      -- linters = {
+      --   phpstan = {
+      --     args = { "-l max", "--error-format=json", "--memory-limit 1G" },
+      --   },
+      -- },
     },
   },
 }
