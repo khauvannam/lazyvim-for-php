@@ -2,6 +2,7 @@ return {
   "Pocco81/auto-save.nvim",
   lazy = false,
   opts = {
+    deboune_delay = 3000,
     execution_message = {
       message = function()
         return ""
