@@ -26,3 +26,4 @@ local set_autoformat = function(pattern, bool_val)
 end
 
 set_autoformat({ "php" }, false)
+set_autoformat({ "lua" }, false)

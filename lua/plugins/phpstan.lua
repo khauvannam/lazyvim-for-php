@@ -9,7 +9,7 @@ return {
         cmd = "phpstan",
         args = {
           "analyze",
-          "level=1",
+          "--level=1",
           "--error-format=json",
           "--memory-limit=2G",
           "--no-progress",
