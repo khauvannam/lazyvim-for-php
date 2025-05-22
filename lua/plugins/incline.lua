@@ -12,7 +12,7 @@ return {
         local ft_icon, ft_color = devicons.get_icon_color(filename)
 
         local function get_diagnostic_label()
-          local icons = { error = "", warn = "", info = "", hint = "" }
+          local icons = { error = "", warn = "", info = "", hint = "\u{f400}" }
           local label = {}
 
           for severity, icon in pairs(icons) do
